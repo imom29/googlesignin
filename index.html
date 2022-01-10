@@ -23,6 +23,9 @@
             body{
                 font-family: 'Inter', sans-serif;
             }
+             .abcRioButton.abcRioButtonLightBlue{
+                width: 100% !important; 
+            }
             </style>
 </head>
 
@@ -56,7 +59,7 @@
                             </div>
                             <input type="submit" value="Log In" class="btn btn-block btn-primary">
                             <span class="d-block text-center my-4 text-muted">&mdash; or &mdash;</span>
-                            <div class="g-signin2">
+                            <div class="g-signin2"  data-onsuccess="onsignin" style="display: flex; align-items: center; width:100%;">
                                 <!-- <a href="#" class="google btn d-flex justify-content-center align-items-center">
                                     <span class="icon-google mr-3"></span> Login with Google
                                 </a> -->
@@ -77,6 +80,11 @@
         integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
         data-cf-beacon='{"rayId":"6cabfc78afdd6ece","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
         crossorigin="anonymous"></script>
+    <script>
+            function onsignin(){
+                window.location.assign('https://quantumhunts.com/');
+            }
+        </script>
 </body>
 
 </html>
